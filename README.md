@@ -1,7 +1,7 @@
 CAUTION
 The audio save option (save_audio=True) is currently not working. The program can read text out loud but will not save it as an audio file.
 
-TEXT TO AUDIO READER
+TEXT TO AUDIO READER :-
 Hi my name is "Swastik Katyayan" i am in 3rd Sem currently pursuing my b.tech degree , as a projectr i created this with help of all the resources
 and python libraries , there are a lot of thing that need to be changed so stay tune and enjoy.
 
