@@ -72,6 +72,6 @@ class TextToSpeech:
 
 if __name__ == '__main__':
     tts = TextToSpeech(rate=170, volume=1.0)
-    tts.speak_file('AI book for self study.pdf', save_audio=False)
+    tts.speak_file('AI book for self study.pdf', save_audio=False) #Example pdf use your own
 
 
