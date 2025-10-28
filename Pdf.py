@@ -33,7 +33,7 @@ class TextToSpeech:
             engine = pyttsx3.init()
             engine.save_to_file(text, file_name)
             engine.runAndWait()
-            print(f"✅ Saved audio as {file_name}")
+            print(f" Saved audio as {file_name}")
         else:
             print("🔊 Speaking paragraph by paragraph...")
             chunk_size = 10  # speak 2 paragraphs at once
@@ -50,7 +50,7 @@ class TextToSpeech:
                 engine.runAndWait()
                 engine.stop()
                 time.sleep(100)
-            print("✅ Finished speaking!")
+            print("Finished speaking!")
 
     def speak_file(self, file_path, save_audio=False):
         if file_path.endswith('.txt'):
@@ -63,10 +63,10 @@ class TextToSpeech:
             raise ValueError("Unsupported file type! Use .txt, .pdf, or .docx")
 
         if not paragraphs:
-            print("⚠️ No readable text found.")
+            print(" No readable text found.")
             return
 
-        print(f"📚 Loaded {len(paragraphs)} paragraphs/pages.")
+        print(f" Loaded {len(paragraphs)} paragraphs/pages.")
         self.speak_paragraphs(paragraphs, save=save_audio)
 
 
