@@ -35,12 +35,12 @@ class TextToSpeech:
             engine.runAndWait()
             print(f" Saved audio as {file_name}")
         else:
-            print("🔊 Speaking paragraph by paragraph...")
+            print(" Speaking paragraph by paragraph...")
             chunk_size = 10  # speak 2 paragraphs at once
             chunks = [" ".join(paragraphs[i:i+chunk_size]) for i in range(0, len(paragraphs), chunk_size)]
 
             for i, chunk in enumerate(chunks, start=7):
-                print(f"📖 Speaking chunk {i}/{len(chunks)}...")
+                print(f" Speaking chunk {i}/{len(chunks)}...")
                 engine = pyttsx3.init()
                 voices = engine.getProperty('voices')
                 engine.setProperty('voice', self.voice or voices[1].id)
